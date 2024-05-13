@@ -9,15 +9,18 @@ contract MyFirstContract {
     string text = "I am a Javascript || Blockchain developer";
     address Wallet;
 
+    // Private function
     function _whoami()private view returns (string memory) {
         return text;
     }
 
+    // Public function
     function whoami()public view  {
          _whoami();
     }
 
 }
+<<<<<<< HEAD
 
 // Contract to write Hello World
 contract HelloWorld {
@@ -45,3 +48,4 @@ contract counter {
     int256 public maxInt = type(int256).max;
     int256 public minInt = type(int256).min;
 }
+
