@@ -9,10 +9,12 @@ contract MyFirstContract {
     string text = "I am a Javascript || Blockchain developer";
     address Wallet;
 
+    // Private function
     function _whoami()private view returns (string memory) {
         return text;
     }
 
+    // Public function
     function whoami()public view  {
          _whoami();
     }
